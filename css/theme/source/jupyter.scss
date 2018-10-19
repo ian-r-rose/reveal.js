@@ -1,0 +1,55 @@
+/**
+ * Black theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #111111;
+
+$mainFont: 'Helvetica Neue', Helvetica, sans-serif;
+$mainFontSize: 24px;
+$linkColor: #f37626;
+$linkColorHover: lighten( $linkColor, 20% );
+$headingFont: 'Helvetica Neue', Helvetica, sans-serif;
+$mainColor: #EEEEEE;
+$headingTextShadow: none;
+$headingLetterSpacing: -0.03em;
+$headingTextTransform: none;
+$selectionBackgroundColor: #f37626;
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal section img {
+	margin: 0px;
+	background: transparent;
+	border: 0px;
+	box-shadow: 0; 
+}
+
+.reveal div.slide-background-content {
+  background-image: url(../../images/jupyter.png);
+  background-repeat: no-repeat;
+  background-position: left 12px bottom 12px;
+  background-size: 64px;
+  background-color: $backgroundColor;
+}
+
+.reveal section h1 {
+  color: $linkColor;
+}
