@@ -285,3 +285,9 @@ body {
 
 .reveal section h1 {
   color: #f37626; }
+
+.reveal table th,
+.reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-bottom: 0px solid; }

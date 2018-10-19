@@ -25,9 +25,122 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-          <h3>Slide 3</h3>
+          <h1>JupyterLab</h1>
+          <h3>The Evolution of the Juptyer Notebook</h3>
+          <h2>Ian Rose, PyData Los Angeles 2018</h2>
         </section>
-				<section>Slide 2</section>
+        <section data-markdown>
+          ## Motivation
+          ### Let's make tools for interactive computing at all scales
+        </section>
+        <section>
+          <h2>Classic Jupyter Notebook</h2>
+          <h4>More than just notebooks</h4>
+          <table>
+            <tr>
+              <td class="fragment"><img src="images/classic_notebook.png"></img></td>
+              <td class="fragment"><img src="images/classic_tree.png"></img></td>
+            </tr>
+            <tr>
+              <td class="fragment"><img src="images/classic_terminal.png"></img></td>
+              <td class="fragment"><img src="images/classic_file.png"></img></td>
+            </tr>
+          </table>
+        </section>
+        <section data-markdown>
+          ## JupyterLab: building blocks for interactive computing
+          * Work with components in a flexible and integrated manner
+          * Modern JavaScript development
+            - TypeScript
+            - npm/yarn
+            - WebPack
+            - React
+            - PhosphorJS
+          * Clean model/view separation
+          * Well separated public/private APIs
+          * Fully extensible by third parties
+          * High performance
+          * Informed by UI/UX design and user-testing
+        </section>
+        <section>
+          <h2>JupyterLab: an integrated experience</h2>
+          <img src="images/jupyterlab.png"></img>
+        </section>
+        <section data-markdown>
+          ## JupyterLab today
+          * ~3.5 years of development, ~100 contributors
+          * ~13,000 commits, ~3,400 Releases, ~60 core components
+          * Full support for Jupyter Notebooks (the .ipynb format has not changed)
+          * Notebooks, terminals, text editor, file browser, code console
+          * Extension architecture enables anyone to add capabilities to JupyterLab 
+          * Integration between built-in components and extensions through public APIs
+          * Rich handling of different data types
+          * Ready for use! JupyterLab is now out of Beta.
+          * `conda install -c conda-forge jupyterlab`
+        </section>
+        <section data-markdown>
+          ## Who is using JupyterLab?
+          * Large Synoptic Space Telescope
+          * UC Berkeley
+          * National Energy Research Scientific Computing Center (NERSC)
+          * European Commission Joint Research Center
+          * Instituto de Plasmas e Fusão Nuclear
+          * Google
+          * Bloomberg
+          * JPMorgan
+          * ESRI
+          * Capsule8
+          * Bath University
+          * Johns Hopkins
+          * Cal Poly
+          * Finn.no
+          * Dalhousie University
+          * GE Power
+          * U-Planner
+          * Pangeo Data
+          * Teradata
+          * QuantStack
+          * REI
+        </section>
+        <section data-markdown>
+          ## Recently added features
+          * Workspace and tree handlers: opening files and activity layouts via URL
+          * Kernel completion in text files
+          * Persistent collapsing of cell inputs and outputs
+          * More comprehensive menu system
+          * Settings for font family and size in notebooks and text files
+          * User interface for managing third-party extensions
+          * Dynamic theme loading
+          * Extensions: GitHub, status bar, cell tags, table of contents, keyboard shortcuts
+        </section>
+        <section data-markdown>
+          # Live demos!
+        </section>
+        <section>
+          ## Features-to-come
+          * Monaco + language-server-protocol
+          * Unified undo/redo
+          * Unified find/replace
+          * Tools for working with sensitive data
+          * Real-time collaboration
+          * Stable developer APIs
+          * Tools for working with large datasets
+        </section>
+        <section>
+          <h2>Acknowledgements</h2>
+          <p>
+            JupyterLab Team: Brian Granger, Jason Grout, Steven Silvester, Afshin Darian,  Jessica Forde,  Grant Nestor, Saul Shanabrook, Vidar Tonaas Fauske, Ian Rose, Chris Colbert
+          </p>
+          <p>
+            Project Jupyter Team:  Fernando Perez, Min Ragan-Kelley, Paul Ivanov, Thomas Kluyver, Matthias Bussonier, Damian Avila, Jonathan Frederic, Kyle Kelley, Jessica Hamrick, Carol Willing, Sylvain Corlay, Peter Parente, Ana Ruvalcaba, M Pacer, Chris Holdgraf, Yuvi Panda, Tim Head, Jamie Whitacre, Cameron Oelson, Zach Sailer,  and many more
+          </p>
+          <p>
+            Funding: Alfred P. Sloan Foundation, Moore Foundation, Helmsley Trust
+          </p>
+        </section>
+				<section>
+          <h1>Thanks!</h1>
+        </section>
 			</div>
 		</div>
 
@@ -39,6 +152,10 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
