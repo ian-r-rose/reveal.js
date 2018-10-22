@@ -4,10 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>JupyterLab PyData LA</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/jupyter.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -28,6 +29,8 @@
           <h1>JupyterLab</h1>
           <h3>The Evolution of the Juptyer Notebook</h3>
           <h2>Ian Rose, PyData Los Angeles 2018</h2>
+          <h3><i class="fab fa-twitter">&nbsp @IanRRose</i></h3>
+          <h3><i class="fab fa-github">&nbsp @ian-r-rose</i></h3>
         </section>
         <section data-markdown>
           ## Motivation
@@ -68,8 +71,8 @@
         </section>
         <section data-markdown>
           ## JupyterLab today
-          * ~3.5 years of development, ~100 contributors
-          * ~13,000 commits, ~3,400 Releases, ~60 core components
+          * ~3.5 years of development, ~170 contributors
+          * ~13,500 commits, ~3,700 Releases, ~60 core components
           * Full support for Jupyter Notebooks (the .ipynb format has not changed)
           * Notebooks, terminals, text editor, file browser, code console
           * Extension architecture enables anyone to add capabilities to JupyterLab 
@@ -77,6 +80,11 @@
           * Rich handling of different data types
           * Ready for use! JupyterLab is now out of Beta.
           * `conda install -c conda-forge jupyterlab`
+        </section>
+        <section>
+          <h2>Over 3 million public notebooks</h2>
+          <img src="images/trend.png"></img>
+          <img src="images/count.png"></img>
         </section>
         <section data-markdown>
           ## Who is using JupyterLab?
@@ -117,14 +125,42 @@
           # Live demos!
         </section>
         <section>
-          ## Features-to-come
+          <h2>Large remote datasets</h2>
+          <table>
+            <tr>
+              <td><img src="images/hdf.png"></img></td>
+              <td><img src="images/netcdf.png"></img></td>
+            </tr>
+            <tr>
+              <td><img src="images/cog.png"></img></td>
+              <td><img src="images/csv.svg"></img></td>
+            </tr>
+          </table>
+        </section>
+        <section>
+          <h2>Tools for sensitive data</h2>
+          <table>
+            <tr>
+              <td style="width: 50%"><img src="images/hippa.png"></img></td>
+              <td style="width: 50%"><img src="images/gdpr.png"></img></td>
+            </tr>
+          </table>
+        </section>
+        <section>
+          <h2>Real-time collaboration</h2>
+          <table>
+            <tr>
+              <td><img src="images/classic_notebook.png"></img></td>
+              <td><img src="images/classic_notebook.png"></img></td>
+            </tr>
+          </table>
+        </section>
+        <section data-markdown>
+          ## More features-to-come
           * Monaco + language-server-protocol
           * Unified undo/redo
           * Unified find/replace
-          * Tools for working with sensitive data
-          * Real-time collaboration
           * Stable developer APIs
-          * Tools for working with large datasets
         </section>
         <section>
           <h2>Acknowledgements</h2>
